@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	{% load static %}
+<title>Donation Form Flat Responsive widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Donation Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- css files -->
+<link href="{% static 'dcss/style.css' %}" rel='stylesheet' type='text/css' media="all" />
+<!-- /css files -->
+<!-- font files -->
+<link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600italic,600,700,700italic' rel='stylesheet' type='text/css'><!-- /font files -->
+</head>
+<body>
+<h1 class="header-agileits w3 w3l agile-info">Donation Form</h1>
+
+<div class="content-w3ls">
+	<div class="form-w3layouts">
+		<form action="#" method="post">
+			{% csrf_token %}
+			<div class="form-control">
+				<label class="header">Name <span>*</span> </label>
+				<input type="text" id="name" name="name" placeholder="Your Name" title="Please enter your Full Name" required="">
+				<div class="clear"></div>
+			</div>
+
+			<div class="form-control">
+				<label class="header">Email <span>*</span> </label>
+				<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address" required="">
+				<div class="clear"></div>
+			</div>
+			<!--
+			<div class="form-control">
+				<label class="header">Address <span>*</span> </label>
+				<input type="text" id="bill" name="bill" placeholder="Address" title="Please enter Your Address" required="">
+				<div class="clear"></div>
+			</div>
+			-->
+			<div class="form-control">
+				<label class="header">Phone Number <span>*</span> </label>
+				<input type="tel" id="usrtel" name="phone" placeholder="Your Phone Number" title="Please enter Your Phone Number" required="">
+				<div class="clear"></div>
+			</div>
+			<div class="form-control">
+				<label class="header">Donation amount(Rs) <span>*</span> </label>
+				<input type="tel" id="usrtel" name="amount" placeholder="20" title="Please enter Your Amount" required="">
+				<div class="clear"></div>
+			</div>
+			<!--
+			<div class="form-control">
+				<label class="enquiry">Donation comments <span>*</span> </label>
+				<textarea id="message" name="message" placeholder="Your Queries" title="Please enter Your Queries"></textarea>
+				<div class="clear"></div>
+			</div>
+			<div class="form-control">
+				<label class="header header-1">Verification Code <span>*</span> </label>
+				<input type="tel" id="usrtel" name="usrtel" placeholder="Verification Code" title="Please enter Verification Code" required="">
+				<div class="clear"></div>
+			</div>
+			<div class="agile-w3ls">
+				<p class="be-wls">The verification code is given below</p>
+				<img src="{% static 'images/3.jpg' %}" class="code" alt="">
+			</div>
+			-->
+			<div class="form-control">
+				<a href="{% url 'donate' %}"><input type="submit" class="register" value="Donate"></a>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<p class="copyright agileits-w3layouts agile w3-agile">© 2017 Donation Form. All Rights Reserved | Design by <a href="" target="_blank">Jay_Pathak</a></p>
+</body>
+</html>
